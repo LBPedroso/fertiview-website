@@ -1,0 +1,20 @@
+# Arquivos do sistema
+.DS_Store
+Thumbs.db
+
+# Arquivos de log
+*.log
+
+# Dependências node (caso use no futuro)
+node_modules/
+
+# Arquivos de IDE
+.vscode/
+.idea/
+
+# Arquivos temporários
+*.tmp
+*.temp
+
+# Backup files
+*.bak

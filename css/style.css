@@ -1,0 +1,55 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+h1, h2, h3 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.primary-color {
+    color: #28a745; /* Verde principal */
+}
+
+.primary-bg {
+    background-color: #28a745; /* Fundo verde */
+}
+
+.secondary-bg {
+    background-color: #000; /* Fundo preto */
+    color: #fff;
+}
+
+.cta-button {
+    background-color: #28a745;
+    color: #fff;
+    border-radius: 5px;
+}
+
+.cta-button:hover {
+    background-color: #218838;
+}
+
+.banner {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    background: url('banner-placeholder.jpg') center/cover no-repeat;
+}
+
+.video-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.video-placeholder {
+    width: 80%;
+    height: 300px;
+    background: #ddd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    color: #666;
+}
