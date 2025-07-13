@@ -20,11 +20,11 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html">Início</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html">Início</a></li>
                     <li class="nav-item"><a class="nav-link" href="quem-somos.html">Quem Somos</a></li>
                     <li class="nav-item"><a class="nav-link" href="servicos.html">O que Fazemos</a></li>
                     <li class="nav-item"><a class="nav-link" href="produtos.html">Produtos</a></li>
-                    <li class="nav-item"><a class="nav-link" href="contato.html">Contato</a></li>
+                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="contato.html">Contato</a></li>
                 </ul>
             </div>
         </div>
@@ -36,22 +36,35 @@
             <div class="row justify-content-center">
                 <div class="col-lg-7">
                     <h2 class="text-center primary-color mb-4">Fale Conosco</h2>
-                    <p class="text-center mb-4">Preencha o formulário abaixo e nossa equipe retornará o mais breve possível.</p>
-                    <form>
+                    <p class="text-center mb-4">Preencha o formulário abaixo e sua mensagem será enviada diretamente pelo WhatsApp.</p>
+                    
+                    <!-- Alerta informativo -->
+                    <div class="alert alert-success mb-4" role="alert">
+                        <div class="d-flex align-items-center">
+                            <i class="me-2">�</i>
+                            <div>
+                                <strong>Contato via WhatsApp:</strong><br>
+                                <small>Preencha o formulário e clique no botão para enviar sua mensagem diretamente pelo WhatsApp</small>
+                            </div>
+                        </div>
+                    </div>
+                    <form id="contatoForm">
                         <div class="mb-3">
                             <label for="nome" class="form-label">Nome</label>
-                            <input type="text" class="form-control" id="nome" placeholder="Seu nome completo" required>
+                            <input type="text" class="form-control" id="nome" name="nome" placeholder="Seu nome completo" required>
                         </div>
                         <div class="mb-3">
-                            <label for="email" class="form-label">E-mail</label>
-                            <input type="email" class="form-control" id="email" placeholder="seu@email.com" required>
+                            <label for="telefone" class="form-label">Telefone</label>
+                            <input type="tel" class="form-control" id="telefone" name="telefone" placeholder="(44) 99999-9999" required>
                         </div>
                         <div class="mb-3">
                             <label for="mensagem" class="form-label">Mensagem</label>
-                            <textarea class="form-control" id="mensagem" rows="4" placeholder="Como podemos ajudar?" required></textarea>
+                            <textarea class="form-control" id="mensagem" name="mensagem" rows="4" placeholder="Como podemos ajudar?" required></textarea>
                         </div>
                         <div class="d-grid">
-                            <button type="submit" class="btn cta-button btn-lg">Enviar Mensagem</button>
+                            <button type="button" class="btn btn-success btn-lg" onclick="enviarWhatsApp()">
+                                📱 Enviar Mensagem via WhatsApp
+                            </button>
                         </div>
                     </form>
                 </div>
@@ -60,7 +73,7 @@
                         <h5 class="primary-color mb-3">Outros canais</h5>
                         <p class="mb-1"><strong>E-mail:</strong> contato@fertiview.com.br</p>
                         <p class="mb-1"><strong>Telefone:</strong> (44) 99916-1182</p>
-                        <p class="mb-1"><strong>Endereço:</strong> R. Araruna, 2351 - Centro, Campo Mourão - PR, 87302-250</p>
+                        <p class="mb-1"><strong>Endereço:</strong> R. Araruna, 2351, Campo Mourão - PR, 87302-250</p>
                         <div class="mt-4 social-links">
                             <h6 class="primary-color mb-3">Siga-nos nas redes sociais:</h6>
                             <a href="https://wa.me/5544999161182" target="_blank" title="WhatsApp"><img src="imagens/whatsapp.jpeg" alt="WhatsApp" width="40"></a>
